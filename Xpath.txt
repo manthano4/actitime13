@@ -1,0 +1,45 @@
+  *Xpath 
+//div[text() = 'Mobiles & Tablets']
+//div[text() = 'Electronics']
+//div[text() = 'TVs & Appliances']
+//div [text() = 'div']
+//div[text() = '
+
+
+
+*Xpath By contains* (overcome drawback of attribute & text)
+
+//div[contains(text() ,'TVs & Appliances')]
+
+
+
+
+
+
+
+*Independant & dependant* (Mobile value ->completely dinamic value)
+
+//td[text()='Buddhist train']/..//td[text()='+91 9717648718']
+//td[text()="Maharajas' Express"]/..//td[@data-title='mail']
+
+//div[text()='APPLE iPhone 14 (Starlight, 128 GB)']/../..//div[@class='_30jeq3 _1_WHN1']
+
+
+*Xpath By Group Index* (dependant element completely dependant on fix element)
+
+(//div[text() = 'realme C35 (Glowing Black, 128 GB)'])[1]/../..//div[@class = '_30jeq3 _1_WHN1']
+
+(//li[text() ='4 GB RAM | 64 GB ROM | Expandable Upto 1 TB'])[1]/../../..//div[text() = 'realme C35 (Glowing Black, 64 GB)']/../..//div[@class = '_30jeq3 _1_WHN1']
+
+
+*Xpath By Axes*
+
+ancester
+decendant
+sibling
+preciding
+following
+
+predicate-- condition
+
+//td[text() = 'Buddhist train']/parent :: tr//td[@data-title ='helpline']
